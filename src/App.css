@@ -1,22 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+Body{
+  background-color: rgb(51, 48, 48);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.GradientC-show {
+  width: 600px;
+  height: 200px;
+  background:red;
+  margin-top: 0px;
+  margin: 50px;
+  border-radius: 7px;
+}
+
+.GradientC-detail {
+  width: 600px;
+  height: 200px;
+  background: blue;
+  margin: 50px;
+  border-radius: 7px;
+}
+
+.Header-container{
+  margin-top: 5px;
+}
+
+button{
+  background-color: rgba(45, 45, 66, 0.5);
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+
+
