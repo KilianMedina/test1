@@ -18,9 +18,10 @@ class App extends React.Component {
     super(props);
     this.state = {
       direccion: null,
-      colorUno: null,
-      colorDos: null,
-      estilo: null,
+      colorUno: "red",
+      colorDos: "green",
+      estilo: "linear-gradient",
+      formato:null,
      }
    }
   
@@ -40,6 +41,9 @@ class App extends React.Component {
     this.setState({estilo: newEstilo});
   }
 
+  setChangeFormato = (newFormato) => {
+    this.setState({estilo: newFormato});
+  }
 
   render() {
     return (
@@ -48,11 +52,11 @@ class App extends React.Component {
           <div className="content">
           <Sidebar>
             <BStyle setChangeEstilo={this.setChangeEstilo}/>
-            <BDirection setChangeDirection={this.setChangeDirection}/>
+            <BDirection setChangeDirection={this.setChangeDirection} estilo= {this.state.estilo}/>
             <BColors setChangeColorUno={this.setChangeColorUno} setChangeColorDos={this.setChangeColorDos} />
-            <BFormat/>
+            <BFormat setChangeFormato={this.setChangeFormato}/>
           </Sidebar>
-          <GradientC  estilo= {this.state.estilo} colorUno={this.state.colorUno} direccion= {this.state.direccion}/>
+          <GradientC estilo= {this.state.estilo} direccion= {this.state.direccion} colorUno={this.state.colorUno} colorDos={this.state.colorDos} />
           </div>
         </Main>
       );

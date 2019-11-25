@@ -15,7 +15,7 @@ Body{
 .GradientC-show {
   width: 600px;
   height: 200px;
-  background:red;
+  background: linear-gradient(to left, red,green);
   margin-top: 0px;
   margin: 50px;
   border-radius: 7px;
